@@ -89,4 +89,4 @@ chsh -s $(which zsh)
 source ~/.zshrc
 
 #We are done
-echo "Installation complete! Please relogin!"
+echo "$(tput setaf 2)Installation complete! Please relogin!$(tput sgr0)"
