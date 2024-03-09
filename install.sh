@@ -85,4 +85,4 @@ zsh
 tmux
 
 #We are done
-echo "Installation complete! Please relogin ❤️"
+echo "Installation complete! Please relogin!"
