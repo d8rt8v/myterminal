@@ -14,7 +14,9 @@
  - tmux-plugins/tmux-sensible
  - dracula/tmux
  - dracula-plugins "cpu-usage ram-usage weather time"
- - nhdaly/tmux-better-mouse-mode
+ - nhdaly/tmux-better-mouse-mode*
+
+*Mouse suppport is disabled by default (it will alter copy/paste behavior) to enable set `set -g mouse on` in `.tmux.conf` 
 
 **Install:**
 ```
