@@ -6,7 +6,7 @@ while true; do
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) exit;;
-        * ) echo -e "Please answer $(tput setaf 2)Y$(tput sgr0) or $(tput setaf 1)N$(tput sgr0).";;
+        * ) echo "Please answer $(tput setaf 2)Y$(tput sgr0) or $(tput setaf 1)N$(tput sgr0).";;
     esac
 done
 
