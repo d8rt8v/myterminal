@@ -20,11 +20,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sed -i '/^plugins=/d' ~/.zshrc
 echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)" >> ~/.zshrc
 
 #Correct symbols/emoji display in Tmux
-echo "export LC_ALL=en_IN.UTF-8" >> ~/.zshrc
-echo "export LANG=en_IN.UTF-8" >> ~/.zshrc
+echo "export LC_ALL=C.UTF-8" >> ~/.zshrc
+echo "export LANG=C.UTF-8" >> ~/.zshrc
 
 # Install Tmux
 sudo apt-get install -y tmux
