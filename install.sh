@@ -87,8 +87,6 @@ chsh -s $(which zsh)
 
 # reload and open zsh,ohmyzsh
 source ~/.zshrc
-zsh
-tmux
 
 #We are done
 echo "Installation complete! Please relogin!"
