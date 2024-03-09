@@ -1,20 +1,14 @@
 #!/bin/bash
 
-# Define color codes
-GREEN='\033[0;32m'
-RED='\033[0;31m'
-NC='\033[0m' # No Color
-
 # Ask user of it's intentions
 while true; do
-    read -p "This script will install zsh, ohmyzsh, and tmux alongside with config/plugins. Do you wish to continue ${GREEN}Y${NC}/${RED}N${NC}? " yn
+    read -p "This script will install zsh, ohmyzsh, and tmux alongside with config/plugins. Do you wish to continue $(tput setaf 2)Y$(tput sgr0)/$(tput setaf 1)N$(tput sgr0)? " yn
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) exit;;
-        * ) echo -e "Please answer ${GREEN}Y${NC} or ${RED}N${NC}.";;
+        * ) echo -e "Please answer $(tput setaf 2)Y$(tput sgr0) or $(tput setaf 1)N$(tput sgr0).";;
     esac
 done
-
 
 # Install Zsh
 sudo apt-get update && sudo apt-get install -y zsh git curl wget sudo
