@@ -22,6 +22,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)" >> ~/.zshrc
 
+#Correct symbols/emoji display in Tmux
+echo "export LC_ALL=en_IN.UTF-8" >> ~/.zshrc
+echo "export LANG=en_IN.UTF-8" >> ~/.zshrc
+
 # Install Tmux
 sudo apt-get install -y tmux
 
@@ -60,11 +64,13 @@ EOF
 echo 'if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then tmux a -t default || exec tmux new -s default && exit; fi' >> ~/.zshrc
 
 
+
 # Change default shell to Zsh
 chsh -s $(which zsh)
 
-# reload zsh,ohmyzsh,tmux
+# reload zsh,ohmyzsh
 source ~/.zshrc
 
 #We are done
+tmux
 echo "Installation complete! Press Crtl+b+I to reload Tmux"
