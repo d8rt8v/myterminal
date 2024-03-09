@@ -22,11 +22,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 sed -i '/^plugins=/d' ~/.zshrc
 echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)" >> ~/.zshrc
-echo "export TERM=xterm-256color" >> ~/.zshrc
+
 
 #Correct symbols/emoji display in Tmux
 echo "export LC_ALL=C.UTF-8" >> ~/.zshrc
 echo "export LANG=C.UTF-8" >> ~/.zshrc
+echo "export TERM=xterm-256color" >> ~/.zshrc
 
 # Install Tmux
 sudo apt-get install -y tmux
