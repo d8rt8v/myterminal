@@ -16,7 +16,7 @@
  - dracula-plugins "cpu-usage ram-usage weather time"
  - nhdaly/tmux-better-mouse-mode
 
-Install:
+**Install:**
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/d8rt8v/myterminal/main/install.sh)"
 ```
