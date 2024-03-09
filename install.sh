@@ -23,7 +23,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 sed -i '/^plugins=/d' ~/.zshrc
 sed -i '/source $ZSH\/oh-my-zsh.sh/d' ~/.zshrc
 echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)" >> ~/.zshrc
-echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
+echo "source \$ZSH/oh-my-zsh.sh" >> ~/.zshrc
 
 
 #Correct symbols/emoji display in Tmux
