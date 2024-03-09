@@ -34,11 +34,16 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Configure Tmux
 cat > ~/.tmux.conf << EOF
+
 set -g prefix ^a
+
+# List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'dracula/tmux'
 set -g @dracula-plugins "cpu-usage ram-usage weather time"
+
+# Config Dracula Theme
 set -g @dracula-show-fahrenheit false
 set -g @dracula-cpu-usage true
 set -g @dracula-ram-usage true
@@ -49,10 +54,20 @@ set -g @dracula-cpu-display-load true
 set -g @dracula-refresh-rate 1
 set -g @dracula-show-battery false
 set -g @dracula-military-time true
-set -g mouse on
+
+#Mouse
+set -g mouse off
+
+#Config Mouse if it will be used
 set -g @plugin 'nhdaly/tmux-better-mouse-mode'
+
+# Set 256 colors
 set -s default-terminal 'tmux-256color'
+
+#Fix strange characters
 set -sg escape-time 50
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 EOF
 
