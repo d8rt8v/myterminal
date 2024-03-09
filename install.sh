@@ -72,18 +72,16 @@ EOF
 # Install Tmux plugins
 ~/.tmux/plugins/tpm/bin/install_plugins
 
-
 # Append Tmux command to ~/.zshrc to launch tmux on logon
 echo 'if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then tmux a -t default || exec tmux new -s default && exit; fi' >> ~/.zshrc
-
-
 
 # Change default shell to Zsh
 chsh -s $(which zsh)
 
-# reload zsh,ohmyzsh
+# reload and open zsh,ohmyzsh
 source ~/.zshrc
 zsh
 tmux
+
 #We are done
 echo "Installation complete! Please relogin ❤️"
