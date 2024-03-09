@@ -35,8 +35,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # Configure Tmux
 cat > ~/.tmux.conf << EOF
 
-set -g prefix ^a
-
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
@@ -85,7 +83,7 @@ chsh -s $(which zsh)
 
 # reload zsh,ohmyzsh
 source ~/.zshrc
-
-#We are done
+zsh
 tmux
-echo "Installation complete! Press Crtl+b+I to reload Tmux"
+#We are done
+echo "Installation complete! Please relogin ❤️"
