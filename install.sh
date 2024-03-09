@@ -27,6 +27,7 @@ echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc
 
 
 #Correct symbols/emoji display in Tmux
+echo "#Correct font display" >> ~/.zshrc
 echo "export LC_ALL=C.UTF-8" >> ~/.zshrc
 echo "export LANG=C.UTF-8" >> ~/.zshrc
 echo "export TERM=xterm-256color" >> ~/.zshrc
@@ -78,6 +79,7 @@ EOF
 ~/.tmux/plugins/tpm/bin/install_plugins
 
 # Append Tmux command to ~/.zshrc to launch tmux on logon
+echo "#Open tmux on logon" >> ~/.zshrc
 echo 'if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then tmux a -t default || exec tmux new -s default && exit; fi' >> ~/.zshrc
 
 # Change default shell to Zsh
