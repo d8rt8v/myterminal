@@ -2,6 +2,18 @@
 
 ![img](https://github.com/d8rt8v/myterminal/assets/17141491/112276e1-acac-4686-8498-c04d07a43fc0)
 
+**Used zsh plugins:**
+ -  git
+ -  zsh-autosuggestions
+ -  zsh-syntax-highlighting
+ -  you-should-use
+
+**Used tmux plugins:**
+ - tmux-plugins/tpm
+ - tmux-plugins/tmux-sensible
+ - dracula/tmux
+ - dracula-plugins "cpu-usage ram-usage weather time"
+ - nhdaly/tmux-better-mouse-mode
 
 Install:
 ```
