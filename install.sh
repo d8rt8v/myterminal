@@ -7,11 +7,11 @@ NC='\033[0m\]' # No Color
 
 # Ask user of it's intentions
 while true; do
-    read -p "This script will install zsh, ohmyzsh, and tmux alongside with config/plugins. Do you wish to continue? " yn
+    read -p "This script will install zsh, ohmyzsh, and tmux alongside with config/plugins. Do you wish to continue ${GREEN}Y${NC}/${RED}N${NC}? " yn
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) exit;;
-        * ) echo -e "Please answer ${GREEN}yes${NC} or ${RED}no${NC}.";;
+        * ) echo -e "Please answer ${GREEN}Y${NC} or ${RED}N${NC}.";;
     esac
 done
 
