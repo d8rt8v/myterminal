@@ -17,7 +17,7 @@ done
 
 
 # Install Zsh
-sudo apt-get update && sudo apt-get install -y zsh
+sudo apt-get update && sudo apt-get install -y zsh git curl wget
 
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
